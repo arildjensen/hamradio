@@ -56,6 +56,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   echo "  <div class='col-xs-6'>1/4-wave length:</div>";
   echo "  <div class='col-xs-6'><strong>" . to_feetinches($quarter_mm,$in_denom) . " </strong> (" . to_inches($quarter_mm,$in_denom) . ") " . round($quarter_mm) . " mm</div>";
   echo "</div>";
+  echo "<div class='row'>";
+  echo "  <div class='col-xs-6'>Full wave length:</div>";
+  echo "  <div class='col-xs-6'><strong>" . to_feetinches(4*$quarter_mm,$in_denom) . " </strong> (" . to_inches(4*$quarter_mm,$in_denom) . ") " . round(4*$quarter_mm) . " mm</div>";
+  echo "</div>";
 
 
   $quarter_in_tmp = round($quarter_mm / 25.4 * $in_denom,0,PHP_ROUND_HALF_UP);
