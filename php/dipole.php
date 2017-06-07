@@ -33,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   $in_denom = 8;
   $freq   = $_POST['frequency'];
   // Calculate 1/4-wavelength in mm using speed of light for air
-  $full_mm = 1005 / $freq * 304.8;
+  $full_mm = 936 / $freq * 304.8; #From p.142 "Practical Antenna Handbook" 4th ed.
   $quarter_mm = $full_mm / 4;
 
   echo "<div class='row'>";
