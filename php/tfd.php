@@ -1,30 +1,16 @@
 <html>
-<head>
-<!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-</head>
-
+<?php
+include('headers.php');
+?>
 
 <body>
 <div class="container">
 <h1>Terminated Folded Dipole</h1>
 
 <form action="tfd.php" method="post" class="form-inline">
-  <div class="form-group">
-    <label class="sr-only" for="frequency">Frequency</label>
-    <div class="input-group">
-      <div class="input-group-addon">Frequency:</div>
-      <input type="text" class="form-control" id="frequency" name="frequency" placeholder="e.g. 14.250">
-      <div class="input-group-addon">MHz</div>
-    </div>
-  </div>
-  <button type="submit" class="btn btn-primary">Calculate</button>
+<?php
+include('input-form.php');
+?>
 </form>
 
 <?php
